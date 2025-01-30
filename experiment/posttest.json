@@ -2,37 +2,54 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which of the following is the primary goal of data preprocessing?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To increase dataset size",
+        "b": "To remove noise and inconsistencies",
+        "c": "To replace machine learning models",
+        "d": "To visualize data"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Increasing dataset size is not the primary goal of preprocessing.",
+        "b": "Correct! Data preprocessing aims to clean and structure data for better model performance.",
+        "c": "Machine learning models are used after preprocessing, not replaced by it.",
+        "d": "Visualization is important but not the primary goal of preprocessing."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which technique is commonly used to handle missing values in a dataset?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Deleting the entire dataset",
+        "b": "Filling missing values with mean, median, or mode",
+        "c": "Ignoring missing values",
+        "d": "Multiplying missing values by a factor"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Deleting the entire dataset is not a practical approach.",
+        "b": "Correct! Imputation methods like mean, median, and mode help handle missing values.",
+        "c": "Ignoring missing values can lead to biased results.",
+        "d": "Multiplying missing values is not a valid technique."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of text tokenization in data preprocessing?",
+      "answers": {
+        "a": "To convert text into numerical features for machine learning",
+        "b": "To remove stopwords from the dataset",
+        "c": "To summarize large datasets",
+        "d": "To encrypt textual data"
+      },
+      "explanations": {
+        "a": "Correct! Tokenization splits text into individual words or phrases, making it suitable for ML models.",
+        "b": "Stopword removal is a separate preprocessing step.",
+        "c": "Summarization is different from tokenization.",
+        "d": "Tokenization is not related to encryption."
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
