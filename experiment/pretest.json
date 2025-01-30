@@ -2,37 +2,54 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the first step in preparing data for machine learning?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Training the model",
+        "b": "Preprocessing the data",
+        "c": "Making predictions",
+        "d": "Deploying the model"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Model training happens after preprocessing.",
+        "b": "Correct! Preprocessing is the first step before training a model.",
+        "c": "Predictions come after training the model.",
+        "d": "Deployment is the final step, not the first."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which type of data is commonly processed before machine learning?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Text data",
+        "b": "Numerical data",
+        "c": "Image data",
+        "d": "All of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Text data needs preprocessing, but it's not the only type.",
+        "b": "Numerical data also requires cleaning and scaling.",
+        "c": "Image data often requires resizing and normalization.",
+        "d": "Correct! Different types of data require preprocessing before ML."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is data preprocessing important?",
+      "answers": {
+        "a": "To make the data easier for machines to understand",
+        "b": "To make machine learning models perfect",
+        "c": "To remove all errors from the dataset",
+        "d": "To generate more data"
+      },
+      "explanations": {
+        "a": "Correct! Preprocessing ensures data is in a structured format suitable for ML models.",
+        "b": "ML models cannot be perfect; preprocessing helps improve accuracy.",
+        "c": "Preprocessing reduces errors but may not remove all of them.",
+        "d": "Preprocessing does not generate new data; it improves existing data."
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
