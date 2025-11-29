@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which step should be performed before applying machine learning algorithms?",
+      "answers": {
+        "a": "Deploying the model",
+        "b": "Data preprocessing",
+        "c": "Hyperparameter tuning",
+        "d": "Model evaluation"
+      },
+      "explanations": {
+        "a": "Deployment happens at the end of the ML pipeline.",
+        "b": "Correct! Data preprocessing prepares raw data for model training.",
+        "c": "Tuning is done after training.",
+        "d": "Evaluation happens after training, not before."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which method helps detect outliers in a dataset?",
+      "answers": {
+        "a": "One-hot encoding",
+        "b": "Box plot with IQR",
+        "c": "Min-max scaling",
+        "d": "Train-test split"
+      },
+      "explanations": {
+        "a": "Encoding is used for categorical data, not outliers.",
+        "b": "Correct! Box plots and IQR are effective for outlier detection.",
+        "c": "Scaling adjusts feature ranges but does not detect outliers.",
+        "d": "Splitting data is unrelated to outliers."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which feature scaling technique transforms data to have mean 0 and standard deviation 1?",
+      "answers": {
+        "a": "Min-max scaling",
+        "b": "Standardization (Z-score scaling)",
+        "c": "Ordinal encoding",
+        "d": "Oversampling"
+      },
+      "explanations": {
+        "a": "Min-max scales data to a 0–1 range.",
+        "b": "Correct! Z-score scaling standardizes data using mean and standard deviation.",
+        "c": "Encoding converts categories to numbers.",
+        "d": "Oversampling is for imbalanced datasets."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which encoding method is most appropriate for ordered categories like Small, Medium, and Large?",
+      "answers": {
+        "a": "One-hot encoding",
+        "b": "Ordinal encoding",
+        "c": "Min-max scaling",
+        "d": "Z-score normalization"
+      },
+      "explanations": {
+        "a": "One-hot encoding is for categories with no order.",
+        "b": "Correct! Ordinal encoding preserves the natural ordering.",
+        "c": "Scaling does not encode categories.",
+        "d": "Normalization adjusts numeric ranges, not categories."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which method helps reduce the number of features while keeping most of the important information?",
+      "answers": {
+        "a": "PCA (Principal Component Analysis)",
+        "b": "SMOTE",
+        "c": "One-hot encoding",
+        "d": "Backward fill"
+      },
+      "explanations": {
+        "a": "Correct! PCA reduces dimensionality while preserving variance.",
+        "b": "SMOTE handles imbalanced datasets.",
+        "c": "Encoding increases the number of features.",
+        "d": "Backward fill handles missing values."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which technique is commonly used to handle imbalanced datasets?",
+      "answers": {
+        "a": "Standardization",
+        "b": "SMOTE",
+        "c": "Min-max scaling",
+        "d": "IQR outlier detection"
+      },
+      "explanations": {
+        "a": "Scaling does not balance datasets.",
+        "b": "Correct! SMOTE generates synthetic samples for minority classes.",
+        "c": "Scaling adjusts numeric ranges, not class imbalance.",
+        "d": "IQR detects outliers, not imbalance."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}

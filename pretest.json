@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the first step in preparing data for machine learning?",
+      "answers": {
+        "a": "Training the model",
+        "b": "Preprocessing the data",
+        "c": "Making predictions",
+        "d": "Deploying the model"
+      },
+      "explanations": {
+        "a": "Training comes after preprocessing.",
+        "b": "Correct! Preprocessing is the first step before training a model.",
+        "c": "Predictions happen after training the model.",
+        "d": "Deployment is the final stage."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which method is commonly used to identify missing values in a dataset?",
+      "answers": {
+        "a": "df.describe()",
+        "b": "df.value_counts()",
+        "c": "df.isnull().sum()",
+        "d": "df.columns"
+      },
+      "explanations": {
+        "a": "describe() summarizes numerical statistics, not missing values.",
+        "b": "value_counts() counts unique values.",
+        "c": "Correct! It shows how many missing values exist in each column.",
+        "d": "This only lists column names."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which technique is used to handle extreme outliers?",
+      "answers": {
+        "a": "One-hot encoding",
+        "b": "IQR (Interquartile Range) method",
+        "c": "Normalization",
+        "d": "Forward fill"
+      },
+      "explanations": {
+        "a": "This is used for categorical encoding.",
+        "b": "Correct! IQR helps detect and remove outliers.",
+        "c": "Normalization scales features but doesn't detect outliers.",
+        "d": "Forward fill is used for missing values, not outliers."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is feature scaling important?",
+      "answers": {
+        "a": "It removes all noise from the dataset",
+        "b": "It ensures all features contribute equally during training",
+        "c": "It increases dataset size",
+        "d": "It converts numerical data into categories"
+      },
+      "explanations": {
+        "a": "Scaling does not remove noise.",
+        "b": "Correct! Scaling prevents large-valued features from dominating.",
+        "c": "Scaling does not increase dataset size.",
+        "d": "Scaling does not convert numerical data."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which encoding method is best for nominal categorical variables?",
+      "answers": {
+        "a": "Ordinal encoding",
+        "b": "One-hot encoding",
+        "c": "Z-score scaling",
+        "d": "IQR outlier removal"
+      },
+      "explanations": {
+        "a": "Ordinal encoding is used when categories have order.",
+        "b": "Correct! One-hot encoding is ideal for unordered categories.",
+        "c": "Z-score scaling is for feature scaling.",
+        "d": "IQR handles outliers, not categories."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which technique is widely used for handling imbalanced datasets?",
+      "answers": {
+        "a": "Min-max scaling",
+        "b": "SMOTE",
+        "c": "Dropping columns",
+        "d": "Ordinal encoding"
+      },
+      "explanations": {
+        "a": "Scaling does not fix imbalance.",
+        "b": "Correct! SMOTE generates synthetic samples for the minority class.",
+        "c": "Dropping columns does not fix imbalance.",
+        "d": "Encoding is unrelated to imbalance."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
