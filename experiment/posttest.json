@@ -2,54 +2,105 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Which of the following is the primary goal of data preprocessing?",
+      "question": "Which step should be performed before applying machine learning algorithms?",
       "answers": {
-        "a": "To increase dataset size",
-        "b": "To remove noise and inconsistencies",
-        "c": "To replace machine learning models",
-        "d": "To visualize data"
+        "a": "Deploying the model",
+        "b": "Data preprocessing",
+        "c": "Hyperparameter tuning",
+        "d": "Model evaluation"
       },
       "explanations": {
-        "a": "Increasing dataset size is not the primary goal of preprocessing.",
-        "b": "Correct! Data preprocessing aims to clean and structure data for better model performance.",
-        "c": "Machine learning models are used after preprocessing, not replaced by it.",
-        "d": "Visualization is important but not the primary goal of preprocessing."
+        "a": "Deployment happens at the end of the ML pipeline.",
+        "b": "Correct! Data preprocessing prepares raw data for model training.",
+        "c": "Tuning is done after training.",
+        "d": "Evaluation happens after training, not before."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "Which technique is commonly used to handle missing values in a dataset?",
+      "question": "Which method helps detect outliers in a dataset?",
       "answers": {
-        "a": "Deleting the entire dataset",
-        "b": "Filling missing values with mean, median, or mode",
-        "c": "Ignoring missing values",
-        "d": "Multiplying missing values by a factor"
+        "a": "One-hot encoding",
+        "b": "Box plot with IQR",
+        "c": "Min-max scaling",
+        "d": "Train-test split"
       },
       "explanations": {
-        "a": "Deleting the entire dataset is not a practical approach.",
-        "b": "Correct! Imputation methods like mean, median, and mode help handle missing values.",
-        "c": "Ignoring missing values can lead to biased results.",
-        "d": "Multiplying missing values is not a valid technique."
+        "a": "Encoding is used for categorical data, not outliers.",
+        "b": "Correct! Box plots and IQR are effective for outlier detection.",
+        "c": "Scaling adjusts feature ranges but does not detect outliers.",
+        "d": "Splitting data is unrelated to outliers."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "What is the purpose of text tokenization in data preprocessing?",
+      "question": "Which feature scaling technique transforms data to have mean 0 and standard deviation 1?",
       "answers": {
-        "a": "To convert text into numerical features for machine learning",
-        "b": "To remove stopwords from the dataset",
-        "c": "To summarize large datasets",
-        "d": "To encrypt textual data"
+        "a": "Min-max scaling",
+        "b": "Standardization (Z-score scaling)",
+        "c": "Ordinal encoding",
+        "d": "Oversampling"
       },
       "explanations": {
-        "a": "Correct! Tokenization splits text into individual words or phrases, making it suitable for ML models.",
-        "b": "Stopword removal is a separate preprocessing step.",
-        "c": "Summarization is different from tokenization.",
-        "d": "Tokenization is not related to encryption."
+        "a": "Min-max scales data to a 0–1 range.",
+        "b": "Correct! Z-score scaling standardizes data using mean and standard deviation.",
+        "c": "Encoding converts categories to numbers.",
+        "d": "Oversampling is for imbalanced datasets."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which encoding method is most appropriate for ordered categories like Small, Medium, and Large?",
+      "answers": {
+        "a": "One-hot encoding",
+        "b": "Ordinal encoding",
+        "c": "Min-max scaling",
+        "d": "Z-score normalization"
+      },
+      "explanations": {
+        "a": "One-hot encoding is for categories with no order.",
+        "b": "Correct! Ordinal encoding preserves the natural ordering.",
+        "c": "Scaling does not encode categories.",
+        "d": "Normalization adjusts numeric ranges, not categories."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which method helps reduce the number of features while keeping most of the important information?",
+      "answers": {
+        "a": "PCA (Principal Component Analysis)",
+        "b": "SMOTE",
+        "c": "One-hot encoding",
+        "d": "Backward fill"
+      },
+      "explanations": {
+        "a": "Correct! PCA reduces dimensionality while preserving variance.",
+        "b": "SMOTE handles imbalanced datasets.",
+        "c": "Encoding increases the number of features.",
+        "d": "Backward fill handles missing values."
       },
       "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which technique is commonly used to handle imbalanced datasets?",
+      "answers": {
+        "a": "Standardization",
+        "b": "SMOTE",
+        "c": "Min-max scaling",
+        "d": "IQR outlier detection"
+      },
+      "explanations": {
+        "a": "Scaling does not balance datasets.",
+        "b": "Correct! SMOTE generates synthetic samples for minority classes.",
+        "c": "Scaling adjusts numeric ranges, not class imbalance.",
+        "d": "IQR detects outliers, not imbalance."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
