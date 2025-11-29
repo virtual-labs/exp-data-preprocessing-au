@@ -1,4 +1,4 @@
-### Procedure
+
 
 <p><strong>Step 1:</strong> Click on the <strong>"Load Dataset for Preprocessing"</strong> button to begin the simulation.</p>
 <img src="./images/step1.1.jpg" alt="Load Dataset button">
