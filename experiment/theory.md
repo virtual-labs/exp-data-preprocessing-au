@@ -2,10 +2,7 @@
 
 Data preprocessing is a crucial step in any machine learning workflow. It involves cleaning, transforming, and organizing raw data so it becomes suitable for training reliable and accurate machine learning models. Since models heavily depend on data quality, preprocessing ensures the dataset is consistent, complete, and ready for analysis.
 
-
-
 #### Importance of Data Preprocessing
-
 Real-world datasets often contain missing values, noise, outliers, and inconsistencies. Without preprocessing, these issues can severely degrade model performance.
 
 ##### Key Benefits
@@ -15,9 +12,7 @@ Real-world datasets often contain missing values, noise, outliers, and inconsist
 - Makes features compatible with ML algorithms  
 - Improves model interpretability  
 
-
-
-### Key Preprocessing Techniques
+#### Key Preprocessing Techniques
 
 #### 1. Handling Missing Data
 
@@ -40,8 +35,6 @@ Outliers are extreme values that can distort model training and skew analysis.
 - **Z-score Method:** remove values where `|z| > 3`
 - **Scatter Plot:** e.g., detecting a 25-year-old earning $10M per year
 
-
-
 #### 3. Feature Scaling
 
 Scaling ensures that features contribute equally during model training.
@@ -55,8 +48,6 @@ Scaling ensures that features contribute equally during model training.
 
 **Example:** Scale Age (0–100) and Income (20k–500k) to a common range.
 
-
-
 #### 4. Encoding Categorical Variables
 
 Convert text categories into numerical values for model training.
@@ -67,8 +58,6 @@ Convert text categories into numerical values for model training.
 |----------|---------------------|--------------------------------------------|
 | Nominal  | One-Hot Encoding    | Color: Red → [1,0,0], Blue → [0,1,0]        |
 | Ordinal  | Ordinal Encoding    | Size: Small→0, Medium→1, Large→2            |
-
-
 
 #### 5. Feature Engineering
 
@@ -108,4 +97,4 @@ Important in fraud detection, rare disease prediction, and anomaly detection.
 
 
 ##### Golden Rule
-**Always perform train–validation–test split *before* preprocessing to avoid data leakage.**
+Always perform train–validation–test split *before* preprocessing to avoid data leakage.
