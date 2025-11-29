@@ -10,46 +10,97 @@
         "d": "Deploying the model"
       },
       "explanations": {
-        "a": "Model training happens after preprocessing.",
+        "a": "Training comes after preprocessing.",
         "b": "Correct! Preprocessing is the first step before training a model.",
-        "c": "Predictions come after training the model.",
-        "d": "Deployment is the final step, not the first."
+        "c": "Predictions happen after training the model.",
+        "d": "Deployment is the final stage."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "Which type of data is commonly processed before machine learning?",
+      "question": "Which method is commonly used to identify missing values in a dataset?",
       "answers": {
-        "a": "Text data",
-        "b": "Numerical data",
-        "c": "Image data",
-        "d": "All of the above"
+        "a": "df.describe()",
+        "b": "df.value_counts()",
+        "c": "df.isnull().sum()",
+        "d": "df.columns"
       },
       "explanations": {
-        "a": "Text data needs preprocessing, but it's not the only type.",
-        "b": "Numerical data also requires cleaning and scaling.",
-        "c": "Image data often requires resizing and normalization.",
-        "d": "Correct! Different types of data require preprocessing before ML."
+        "a": "describe() summarizes numerical statistics, not missing values.",
+        "b": "value_counts() counts unique values.",
+        "c": "Correct! It shows how many missing values exist in each column.",
+        "d": "This only lists column names."
       },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "Why is data preprocessing important?",
+      "question": "Which technique is used to handle extreme outliers?",
       "answers": {
-        "a": "To make the data easier for machines to understand",
-        "b": "To make machine learning models perfect",
-        "c": "To remove all errors from the dataset",
-        "d": "To generate more data"
+        "a": "One-hot encoding",
+        "b": "IQR (Interquartile Range) method",
+        "c": "Normalization",
+        "d": "Forward fill"
       },
       "explanations": {
-        "a": "Correct! Preprocessing ensures data is in a structured format suitable for ML models.",
-        "b": "ML models cannot be perfect; preprocessing helps improve accuracy.",
-        "c": "Preprocessing reduces errors but may not remove all of them.",
-        "d": "Preprocessing does not generate new data; it improves existing data."
+        "a": "This is used for categorical encoding.",
+        "b": "Correct! IQR helps detect and remove outliers.",
+        "c": "Normalization scales features but doesn't detect outliers.",
+        "d": "Forward fill is used for missing values, not outliers."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is feature scaling important?",
+      "answers": {
+        "a": "It removes all noise from the dataset",
+        "b": "It ensures all features contribute equally during training",
+        "c": "It increases dataset size",
+        "d": "It converts numerical data into categories"
+      },
+      "explanations": {
+        "a": "Scaling does not remove noise.",
+        "b": "Correct! Scaling prevents large-valued features from dominating.",
+        "c": "Scaling does not increase dataset size.",
+        "d": "Scaling does not convert numerical data."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which encoding method is best for nominal categorical variables?",
+      "answers": {
+        "a": "Ordinal encoding",
+        "b": "One-hot encoding",
+        "c": "Z-score scaling",
+        "d": "IQR outlier removal"
+      },
+      "explanations": {
+        "a": "Ordinal encoding is used when categories have order.",
+        "b": "Correct! One-hot encoding is ideal for unordered categories.",
+        "c": "Z-score scaling is for feature scaling.",
+        "d": "IQR handles outliers, not categories."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which technique is widely used for handling imbalanced datasets?",
+      "answers": {
+        "a": "Min-max scaling",
+        "b": "SMOTE",
+        "c": "Dropping columns",
+        "d": "Ordinal encoding"
+      },
+      "explanations": {
+        "a": "Scaling does not fix imbalance.",
+        "b": "Correct! SMOTE generates synthetic samples for the minority class.",
+        "c": "Dropping columns does not fix imbalance.",
+        "d": "Encoding is unrelated to imbalance."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]

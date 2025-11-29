@@ -10,7 +10,7 @@ These can be
 The format for the same is discussed below.
 
 ### 2. Target Audience
-This guide is meant for anyone creating a virtual lab and wanting to have a quiz section.
+This guide is t for anyone creating a virtual lab and wanting to have a quiz section.
 
 ### 3. Structure of quiz
 The data for the quiz needs to be added to a json file pertaining the following specifications.
